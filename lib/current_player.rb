@@ -13,7 +13,8 @@ def current_player(board)
 
   turn_number = turn_count(board) + 1
 
-  if turn_number.odd? == true
+  odd_turn_number = turn.number.odd ? true : false
+  if odd_turn_number
     current_player = "X"
   else
     current_player = "O"
