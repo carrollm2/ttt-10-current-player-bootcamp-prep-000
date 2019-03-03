@@ -10,15 +10,15 @@ def turn_count(board)
 end
 
 def current_player(board)
-  counter = turn_count(board)
-  while counter < 9
-    counter += 1
 
-    if counter.odd? == true
-      current_player = "X"
-    else
-      current_player = "O"
-    end
+  counter = turn_count(board)
+
+  if counter.odd? == true
+    current_player = "X"
+  else
+    current_player = "O"
   end
+
   return current_player
+
 end
