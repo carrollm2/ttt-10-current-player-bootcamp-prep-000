@@ -13,7 +13,7 @@ def current_player(board)
   counter = turn_count(board)
   while counter < 9
     counter += 1
-    puts counter
+
     if counter.odd? == true
       current_player = "X"
    else
